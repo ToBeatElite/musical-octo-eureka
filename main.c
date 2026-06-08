@@ -176,14 +176,14 @@ __attribute__((naked)) PVOID fourArgAsmCall(
         
         // ---
         
-        // move rcx to point to address of return address of stack frame
+        // move r11 to point to size of next stack frame
         "add r11, 0x8\n"
         
         // create frame space	
         "sub r10, [r11]\n"
         "sub r10, 0x8\n"
         
-        // move rcx to point to address of return address of stack frame
+        // move r11 to point to address of return address of stack frame
         "add r11, 0x8\n"
         
         // move the return address onto our fake stack
