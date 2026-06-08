@@ -282,7 +282,6 @@ int main() {
         (DWORD64)PAGE_EXECUTE_READWRITE,            
         (DWORD64)pVirtualAlloc,
         (PFRAME_INFO)frames
-
     );
 
     printf("[*] completed spoofed function call\n");
